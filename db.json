@@ -1,0 +1,536 @@
+{
+  "users": [],
+  "scholarships": [
+    {
+      "id": "s1",
+      "title": "HDFC Bank Parivartan's ECS Scholarship",
+      "description": "Supports meritorious students from underprivileged backgrounds, providing financial assistance for school to post-graduation studies.",
+      "amount": 75000,
+      "eligibility": {
+        "marks": 60,
+        "income": 250000,
+        "caste": [
+          "General",
+          "OBC",
+          "SC",
+          "ST"
+        ],
+        "education": [
+          "UG",
+          "PG"
+        ]
+      },
+      "course": [
+        "UG",
+        "PG",
+        "PhD"
+      ],
+      "deadline": "2024-06-30"
+    },
+    {
+      "id": "s2",
+      "title": "Reliance Foundation Undergraduate Scholarship",
+      "description": "Providing support for students from all demographics based on merit and economic need to pursue higher education in India.",
+      "amount": 200000,
+      "eligibility": {
+        "marks": 75,
+        "income": 600000,
+        "caste": [
+          "All"
+        ],
+        "education": [
+          "UG"
+        ]
+      },
+      "course": [
+        "UG",
+        "B.Tech",
+        "B.Sc"
+      ],
+      "deadline": "2024-07-15"
+    },
+    {
+      "id": "s3",
+      "title": "Kotak Kanya Scholarship",
+      "description": "Specifically designed for girl students to pursue higher professional education like Engineering, MBBS, and Law.",
+      "amount": 150000,
+      "eligibility": {
+        "marks": 75,
+        "income": 320000,
+        "caste": [
+          "All"
+        ],
+        "education": [
+          "UG"
+        ]
+      },
+      "course": [
+        "UG",
+        "B.Tech",
+        "MBBS",
+        "LLB"
+      ],
+      "deadline": "2024-09-30"
+    },
+    {
+      "id": "s4",
+      "title": "L'Oréal India For Young Women In Science",
+      "description": "Scholarships for young women who want to pursue their graduation in any scientific field (Pure Sciences/Applied Sciences/Engineering/Medical, etc.).",
+      "amount": 250000,
+      "eligibility": {
+        "marks": 85,
+        "income": 400000,
+        "caste": [
+          "All"
+        ],
+        "education": [
+          "UG"
+        ]
+      },
+      "course": [
+        "B.Sc",
+        "B.Tech"
+      ],
+      "deadline": "2024-08-31"
+    },
+    {
+      "id": "s5",
+      "title": "Adobe India Women-in-Technology Scholarship",
+      "description": "Strives to bring more gender diversity to the technology industry by supporting female engineers.",
+      "amount": 100000,
+      "eligibility": {
+        "marks": 70,
+        "income": 1000000,
+        "caste": [
+          "All"
+        ],
+        "education": [
+          "UG",
+          "PG"
+        ]
+      },
+      "course": [
+        "Computer Science",
+        "B.Tech"
+      ],
+      "deadline": "2024-12-31"
+    },
+    {
+      "title": "Aditya Birla Capital Scholarship 2024-25",
+      "description": "A merit-cum-means scholarship aimed at providing financial assistance to undergraduate students to help them continue their education. It is open to students across India who have a good academic record.",
+      "amount": 36000,
+      "deadline": "2024-10-31",
+      "officialLink": "https://www.buddy4study.com/page/aditya-birla-capital-scholarship",
+      "caste": [
+        "General",
+        "OBC",
+        "SC",
+        "ST"
+      ],
+      "education": [
+        "Undergraduate",
+        "1st Year",
+        "2nd Year",
+        "3rd Year"
+      ],
+      "matchReason": "The scholarship specifically includes General category students and the family income limit of up to ₹6,00,000 fits the applicant's profile of ₹5,00,000 perfectly.",
+      "id": "9th1sbu4d",
+      "eligibility": {
+        "marks": 60,
+        "income": 500000,
+        "caste": [
+          "General",
+          "OBC",
+          "SC",
+          "ST"
+        ],
+        "education": [
+          "Undergraduate",
+          "1st Year",
+          "2nd Year",
+          "3rd Year"
+        ]
+      },
+      "course": [
+        "Any"
+      ]
+    },
+    {
+      "title": "JSW Udaan Scholarship for Undergraduate Students",
+      "description": "Initiated by the JSW Foundation, this scholarship supports students pursuing various undergraduate courses. It is hosted on the Vidyasaarathi portal and targets students from economically weaker backgrounds.",
+      "amount": 30000,
+      "deadline": "2024-12-31",
+      "officialLink": "https://www.vidyasaarathi.co.in/Vidyasaarathi/scholarship",
+      "caste": [
+        "General",
+        "OBC",
+        "SC",
+        "ST"
+      ],
+      "education": [
+        "Undergraduate",
+        "B.A.",
+        "B.Sc.",
+        "B.Com.",
+        "BMS",
+        "BBA"
+      ],
+      "matchReason": "This scholarship is open to all categories including General. The family income eligibility is up to ₹8,00,000, making a student with ₹5,00,000 income highly eligible.",
+      "id": "yltwbf6c0",
+      "eligibility": {
+        "marks": 60,
+        "income": 500000,
+        "caste": [
+          "General",
+          "OBC",
+          "SC",
+          "ST"
+        ],
+        "education": [
+          "Undergraduate",
+          "B.A.",
+          "B.Sc.",
+          "B.Com.",
+          "BMS",
+          "BBA"
+        ]
+      },
+      "course": [
+        "Any"
+      ]
+    },
+    {
+      "title": "Keep India Smiling Foundational Scholarship Programme",
+      "description": "An initiative by Colgate-Palmolive (India) Ltd. that provides financial aid to students who are meritorious but lack resources. It supports students through various stages of their education including 3-year graduation programs.",
+      "amount": 30000,
+      "deadline": "2024-10-31",
+      "officialLink": "https://www.buddy4study.com/scholarship/keep-india-smiling-foundational-scholarship-programme-for-education",
+      "caste": [
+        "General",
+        "OBC",
+        "SC",
+        "ST"
+      ],
+      "education": [
+        "Undergraduate",
+        "12th Pass"
+      ],
+      "matchReason": "Open to General category students with a family income threshold of ₹5,00,000 per annum, aligning exactly with the user's financial profile.",
+      "id": "c9hkwxqz5",
+      "eligibility": {
+        "marks": 60,
+        "income": 500000,
+        "caste": [
+          "General",
+          "OBC",
+          "SC",
+          "ST"
+        ],
+        "education": [
+          "Undergraduate",
+          "12th Pass"
+        ]
+      },
+      "course": [
+        "Any"
+      ]
+    },
+    {
+      "title": "Nikon Scholarship Program 2024-25",
+      "description": "Nikon India provides this scholarship to support students from underprivileged sections of society. While it is often associated with photography-related courses, it frequently includes broader undergraduate categories for students with high marks in the 12th standard.",
+      "amount": 100000,
+      "deadline": "2024-10-20",
+      "officialLink": "https://www.buddy4study.com/page/nikon-scholarship-program",
+      "caste": [
+        "General",
+        "OBC",
+        "SC",
+        "ST"
+      ],
+      "education": [
+        "Undergraduate",
+        "Diploma"
+      ],
+      "matchReason": "The program targets students with an annual income of less than ₹6,00,000 and requires a strong 12th-grade academic record, fitting the 'Good academic %' profile.",
+      "id": "nkgpmnu2l",
+      "eligibility": {
+        "marks": 60,
+        "income": 500000,
+        "caste": [
+          "General",
+          "OBC",
+          "SC",
+          "ST"
+        ],
+        "education": [
+          "Undergraduate",
+          "Diploma"
+        ]
+      },
+      "course": [
+        "Any"
+      ]
+    },
+    {
+      "title": "Sitaram Jindal Foundation Scholarship",
+      "description": "One of the most prestigious private scholarships in India, this scheme provides financial assistance to students from the 11th standard through post-graduation. It focuses on meritorious students from low-income families.",
+      "amount": 18000,
+      "deadline": "2024-12-31",
+      "officialLink": "https://www.sitaramjindalfoundation.org/scholarships-for-students-in-india.php",
+      "caste": [
+        "General",
+        "OBC",
+        "SC",
+        "ST"
+      ],
+      "education": [
+        "Undergraduate",
+        "B.A.",
+        "B.Sc.",
+        "B.Com.",
+        "Professional Courses"
+      ],
+      "matchReason": "The Sitaram Jindal Foundation allows applications from General category students. While their base income limit for some categories is ₹4L, they often accommodate higher income tiers for professional undergraduate degrees.",
+      "id": "j4z26qf04",
+      "eligibility": {
+        "marks": 60,
+        "income": 500000,
+        "caste": [
+          "General",
+          "OBC",
+          "SC",
+          "ST"
+        ],
+        "education": [
+          "Undergraduate",
+          "B.A.",
+          "B.Sc.",
+          "B.Com.",
+          "Professional Courses"
+        ]
+      },
+      "course": [
+        "Any"
+      ]
+    },
+    {
+      "title": "Reliance Foundation Undergraduate Scholarships 2024-25",
+      "description": "A merit-cum-means scholarship for undergraduate students in any stream to support their education and develop them as future leaders. Open to all students based on performance in an aptitude test and household income.",
+      "amount": 200000,
+      "deadline": "2024-10-31",
+      "officialLink": "https://www.reliancefoundation.org/scholarships",
+      "caste": [
+        "General",
+        "OBC",
+        "SC",
+        "ST"
+      ],
+      "education": [
+        "Undergraduate"
+      ],
+      "matchReason": "Open to General category students with a family income of up to ₹15,00,000, which accommodates the user's ₹5,00,000 annual income profile.",
+      "id": "nfjeqd1z7",
+      "eligibility": {
+        "marks": 60,
+        "income": 500000,
+        "caste": [
+          "General",
+          "OBC",
+          "SC",
+          "ST"
+        ],
+        "education": [
+          "Undergraduate"
+        ]
+      },
+      "course": [
+        "Any"
+      ]
+    },
+    {
+      "title": "HDFC Bank Parivartan's ECSS Programme 2024-25",
+      "description": "This scholarship aims to support meritorious and needy students from underprivileged sections of society. It is available for students pursuing UG, PG, or diploma courses.",
+      "amount": 50000,
+      "deadline": "2024-12-31",
+      "officialLink": "https://www.hdfcbank.com/personal/about-us/corporate-social-responsibility/parivartan",
+      "caste": [
+        "General",
+        "OBC",
+        "SC",
+        "ST"
+      ],
+      "education": [
+        "Undergraduate"
+      ],
+      "matchReason": "Targeted at students with family income less than ₹6,00,000; the user fits perfectly with ₹5,00,000 income and General category status.",
+      "id": "z5bhpypuj",
+      "eligibility": {
+        "marks": 60,
+        "income": 500000,
+        "caste": [
+          "General",
+          "OBC",
+          "SC",
+          "ST"
+        ],
+        "education": [
+          "Undergraduate"
+        ]
+      },
+      "course": [
+        "Any"
+      ]
+    },
+    {
+      "title": "Keep India Smiling Foundation Scholarship Program 2024-25",
+      "description": "Colgate-Palmolive (India) Ltd. offers this scholarship to provide foundational support to individuals who are deserving and meritorious but lack resources to pursue their dreams.",
+      "amount": 30000,
+      "deadline": "2024-12-31",
+      "officialLink": "https://www.colgate.com/en-in/make-india-smile/scholarships",
+      "caste": [
+        "General",
+        "OBC",
+        "SC",
+        "ST"
+      ],
+      "education": [
+        "Undergraduate"
+      ],
+      "matchReason": "Matches the user's income profile (limit is ₹5,00,000) and provides specific support for 3-year graduation courses for General category applicants.",
+      "id": "kzfa6lyh8",
+      "eligibility": {
+        "marks": 60,
+        "income": 500000,
+        "caste": [
+          "General",
+          "OBC",
+          "SC",
+          "ST"
+        ],
+        "education": [
+          "Undergraduate"
+        ]
+      },
+      "course": [
+        "Any"
+      ]
+    },
+    {
+      "title": "Sitaram Jindal Foundation Scholarship Scheme",
+      "description": "A merit-cum-means scholarship for students pursuing various courses including graduation. It is one of the most consistent private scholarships in India for General category students.",
+      "amount": 18000,
+      "deadline": "2024-12-31",
+      "officialLink": "https://www.sitaramjindalfoundation.org/scholarships-for-courses-in-india.php",
+      "caste": [
+        "General",
+        "OBC",
+        "SC",
+        "ST"
+      ],
+      "education": [
+        "Undergraduate"
+      ],
+      "matchReason": "Applications are accepted year-round or by specific session deadlines. It is highly suitable for General category UG students with moderate family income.",
+      "id": "9dwxz5f6j",
+      "eligibility": {
+        "marks": 60,
+        "income": 500000,
+        "caste": [
+          "General",
+          "OBC",
+          "SC",
+          "ST"
+        ],
+        "education": [
+          "Undergraduate"
+        ]
+      },
+      "course": [
+        "Any"
+      ]
+    },
+    {
+      "title": "IndusInd Foundation Scholarship",
+      "description": "Provides financial assistance to meritorious students who have passed their 12th class and are seeking admission to regular degree courses.",
+      "amount": 24000,
+      "deadline": "2024-10-15",
+      "officialLink": "https://www.indusind.com/in/en/indusind-foundation/scholarship-application.html",
+      "caste": [
+        "General",
+        "OBC",
+        "SC",
+        "ST"
+      ],
+      "education": [
+        "Undergraduate"
+      ],
+      "matchReason": "Strictly merit-cum-means for General students with family income under 6L; fits your 5L income and good academic profile.",
+      "id": "ht6ws3otz",
+      "eligibility": {
+        "marks": 60,
+        "income": 500000,
+        "caste": [
+          "General",
+          "OBC",
+          "SC",
+          "ST"
+        ],
+        "education": [
+          "Undergraduate"
+        ]
+      },
+      "course": [
+        "Any"
+      ]
+    }
+  ],
+  "subsidies": [
+    {
+      "id": "sub1",
+      "title": "Startup India Seed Fund Scheme (SISFS)",
+      "description": "Provides financial assistance to startups for proof of concept, prototype development, product trials, and market entry.",
+      "category": "Entrepreneurship",
+      "benefit": "Up to ₹20 Lakh Grant"
+    },
+    {
+      "id": "sub2",
+      "title": "Atal Innovation Mission (AIM)",
+      "description": "Nurtures innovation through Atal Tinkering Labs and Atal Incubation Centers across India.",
+      "category": "Innovation",
+      "benefit": "Mentorship & Infrastructure"
+    },
+    {
+      "id": "sub3",
+      "title": "Pradhan Mantri Yuva Yojana (PM-YUVA)",
+      "description": "Entrepreneurship education and training to young individuals for 5 years.",
+      "category": "Education",
+      "benefit": "Training & Handholding"
+    },
+    {
+      "id": "sub4",
+      "title": "Aatmanirbhar Bharat Subsidy",
+      "description": "Incentivizes employers for creation of new employment opportunities during the recovery phase of the economy.",
+      "category": "Employment",
+      "benefit": "EPF Subsidy"
+    }
+  ],
+  "projects": [
+    {
+      "id": "p1",
+      "title": "AI-Powered Agri-Tech Node",
+      "description": "Leveraging decentralized AI for localized crop disease detection and soil nutrient optimization.",
+      "userId": "admin",
+      "status": "prototype",
+      "createdAt": "2024-03-15T10:00:00Z"
+    },
+    {
+      "id": "p2",
+      "title": "Green Hydrogen Fuel Cell",
+      "description": "Developing a scalable hydrogen extraction unit for educational institutions and small campuses.",
+      "userId": "admin",
+      "status": "funding",
+      "createdAt": "2024-04-01T12:00:00Z"
+    }
+  ],
+  "notifications": []
+}

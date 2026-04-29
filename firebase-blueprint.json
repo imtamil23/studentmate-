@@ -1,0 +1,118 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "Comprehensive User profile for scholarship eligibility",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "email": { "type": "string" },
+        "name": { "type": "string" },
+        "points": { "type": "number" },
+        "badges": { "type": "array", "items": { "type": "string" } },
+        "profile": {
+          "type": "object",
+          "properties": {
+            "fullName": { "type": "string" },
+            "dob": { "type": "string" },
+            "gender": { "type": "string", "enum": ["Male", "Female", "Other"] },
+            "maritalStatus": { "type": "string", "enum": ["Single", "Married", "Divorced", "Widowed"] },
+            "mobile": { "type": "string" },
+            "email": { "type": "string" },
+            "currentAddress": { "type": "string" },
+            "permanentAddress": { "type": "string" },
+            "domicileState": { "type": "string" },
+            "category": { "type": "string" },
+            "academicRecords": {
+              "type": "object",
+              "properties": {
+                "class10": { "type": "object" },
+                "class12": { "type": "object" }
+              }
+            },
+            "currentCourse": {
+              "type": "object",
+              "properties": {
+                "institution": { "type": "string" },
+                "courseName": { "type": "string" },
+                "mode": { "type": "string" },
+                "currentYear": { "type": "string" },
+                "semester": { "type": "string" },
+                "admissionNo": { "type": "string" }
+              }
+            },
+            "competitiveExams": { "type": "array" },
+            "parentalIncome": { "type": "number" },
+            "parentalProfession": { "type": "string" },
+            "livingStatus": { "type": "string" },
+            "isDisabled": { "type": "boolean" },
+            "disabilityDetails": { "type": "string" }
+          }
+        }
+      },
+      "required": ["id", "email", "name"]
+    },
+    "Scholarship": {
+      "title": "Scholarship",
+      "description": "Scholarship details",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "amount": { "type": "number" },
+        "eligibility": {
+          "type": "object",
+          "properties": {
+            "marks": { "type": "number" },
+            "income": { "type": "number" }
+          }
+        },
+        "course": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "Subsidy": {
+      "title": "Subsidy",
+      "description": "Government subsidy details",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "category": { "type": "string" },
+        "benefit": { "type": "string" }
+      }
+    },
+    "Project": {
+      "title": "Project",
+      "description": "Student project submission",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "userId": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    }
+  },
+  "firestore": {
+    "users/{userId}": {
+      "schema": "User",
+      "description": "Stores user profile and account details"
+    },
+    "scholarships/{scholarshipId}": {
+      "schema": "Scholarship",
+      "description": "Stores scholarship data"
+    },
+    "subsidies/{subsidyId}": {
+      "schema": "Subsidy",
+      "description": "Stores subsidy data"
+    },
+    "projects/{projectId}": {
+      "schema": "Project",
+      "description": "Stores user submitted projects"
+    }
+  }
+}
