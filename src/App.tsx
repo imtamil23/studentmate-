@@ -267,7 +267,9 @@ export default function App() {
 
   const handleLogout = async () => {
     await api.auth.logout();
+    setUser(null);
     setSidebarOpen(false);
+    window.location.href = "/auth";
   };
 
   if (loading) return (

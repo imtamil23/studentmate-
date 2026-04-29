@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { GraduationCap, ArrowRight, Mail, Lock, User as UserIcon, Zap } from "lucide-react";
+import { GraduationCap, ArrowRight, Mail, Lock, User as UserIcon, Zap, Chrome } from "lucide-react";
 import { api } from "../api";
 import { User } from "../types";
+import { getSupabase } from "../lib/supabase";
 
 export default function AuthPage({ onLogin }: { onLogin: (user: User) => void }) {
   const [isLogin, setIsLogin] = useState(true);
@@ -11,21 +12,51 @@ export default function AuthPage({ onLogin }: { onLogin: (user: User) => void })
   const [name, setName] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const supabase = getSupabase();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
     setError("");
     try {
-      const { token, user } = isLogin 
+      console.log(`[Auth] Initializing ${isLogin ? 'Login' : 'Registration'} for ${email}`);
+      const response = isLogin 
         ? await api.auth.login({ email, password })
         : await api.auth.register({ email, password, name });
       
-      localStorage.setItem("token", token);
-      onLogin(user);
+      const { token, user } = response;
+      
+      if (token) {
+        localStorage.setItem("token", token);
+      }
+      
+      if (user) {
+        onLogin(user);
+      } else if (!isLogin) {
+        // Handle case where Supabase sends confirmation email or returns no immediate session
+        setError("Registration started on Supabase Cloud. Please check your email for confirmation link.");
+      }
+    } catch (err: any) {
+      console.error("Auth error:", err);
+      setError(err.message || "Authentication failed");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleSocialLogin = async (provider: 'google') => {
+    if (!supabase) return;
+    setLoading(true);
+    try {
+      const { error } = await supabase.auth.signInWithOAuth({
+        provider,
+        options: {
+          redirectTo: window.location.origin + "/auth"
+        }
+      });
+      if (error) throw error;
     } catch (err: any) {
       setError(err.message);
-    } finally {
       setLoading(false);
     }
   };
@@ -91,17 +122,37 @@ export default function AuthPage({ onLogin }: { onLogin: (user: User) => void })
 
             {error && <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-[10px] font-black text-red-600 bg-red-50 p-4 rounded-xl border border-red-100 uppercase tracking-widest leading-relaxed text-center">{error}</motion.p>}
 
-
-
             <button
               type="submit"
               disabled={loading}
               className="w-full py-5 bg-emerald-500 text-white rounded-[1.25rem] font-black text-xs uppercase tracking-[3px] flex items-center justify-center gap-2 hover:bg-emerald-600 transition-all shadow-xl shadow-emerald-100 active:scale-95 disabled:opacity-50"
             >
-              {loading ? "Processing..." : isLogin ? "Sign In" : "Register Node"}
-              {!loading && <Zap size={18} />}
+              {loading ? "Processing..." : isLogin ? "Sign In" : "Initialize Cloud Account"}
+              {!loading && < Zap size={18} />}
             </button>
           </form>
+
+          {supabase && (
+            <div className="mt-8 space-y-4">
+              <div className="relative">
+                <div className="absolute inset-0 flex items-center">
+                  <div className="w-full border-t border-slate-100"></div>
+                </div>
+                <div className="relative flex justify-center text-[10px] uppercase tracking-widest font-bold">
+                  <span className="bg-white px-4 text-slate-400">Secure Social Provider</span>
+                </div>
+              </div>
+
+              <button
+                onClick={() => handleSocialLogin('google')}
+                disabled={loading}
+                className="w-full py-4 bg-white border border-slate-200 text-slate-700 rounded-2xl font-bold text-sm flex items-center justify-center gap-3 hover:bg-slate-50 transition-all active:scale-95 disabled:opacity-50"
+              >
+                <Chrome size={20} className="text-red-500" />
+                Auth with Cloud Google
+              </button>
+            </div>
+          )}
 
           <div className="mt-10 text-center border-t border-slate-100 pt-8">
             <p className="text-[11px] font-bold text-slate-400 uppercase tracking-[2px]">

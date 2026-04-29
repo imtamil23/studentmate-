@@ -341,6 +341,22 @@ async function startServer() {
         const { data, error } = await supabase.from('users').select('*').eq('id', req.userId).single();
         if (!error && data) {
           user = data;
+        } else if (error && error.code === 'PGRST116') { // PGRST116 is "no rows found"
+          // Auto-migrate/create user in Supabase public.users if they exist in auth but not public
+          const { data: authUser } = await supabase.auth.getUser(req.headers.authorization?.split(" ")[1]);
+          if (authUser?.user) {
+            console.log(`[Supabase Auto-Create] Creating public record for auth user: ${authUser.user.email}`);
+            const { data: newUser, error: createError } = await supabase.from('users').insert([{
+              id: req.userId,
+              email: authUser.user.email,
+              name: authUser.user.user_metadata?.full_name || authUser.user.user_metadata?.name || "Supabase User",
+              points: 100,
+              badges: [],
+              profile: {},
+              documents: []
+            }]).select().single();
+            if (!createError) user = newUser;
+          }
         }
       }
       
